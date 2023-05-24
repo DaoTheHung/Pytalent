@@ -120,7 +120,7 @@ export default function Login() {
                   className="border caret-primary-500  w-[357px] py-[12px] rounded-[8px] outline-none px-[12px] focus:border-[#009DBE]"
                   {...register("password", {
                     required: true,
-                    minLength: 6,
+
                   })}
                 />
                 <div className="absolute top-[131px] right-[-11px]">
@@ -149,9 +149,7 @@ export default function Login() {
               {errors.password?.type === "required" && (
                 <span className="text-red-500">Is required!</span>
               )}
-              {errors.password?.type == "minLength" && (
-                <span className="text-red-500">Password sai</span>
-              )}
+
 
               <button
                 type="submit"

@@ -1,5 +1,5 @@
 import { removeCookie } from "./cookies";
-import { ToastError, ToastSuccess } from "../components/common/toast";
+import { ToastError, ToastSuccess } from "../components/common/Loast";
 
 export const handleResultApi = (response) => {
   if (response) {

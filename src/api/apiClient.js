@@ -10,6 +10,7 @@ const axiosClient = axios.create({
     "Content-Type": "application/json",
   },
 });
+
 // Request interceptor for API calls
 axiosClient.interceptors.request.use(
   async (config) => {

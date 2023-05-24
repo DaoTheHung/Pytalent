@@ -312,7 +312,7 @@ export default function detail() {
       {visible && (
         <>
           <div className="z-10 h-auto fixed top-0 left-0 bottom-0  right-0 bg-white-200 opacity-90 "></div>
-          <div className=" pt-[17px] animate-appear-slow w-[800px] h-[477px] fixed left-[33%] top-[363px] bg-[#FFFFFF] rounded-[8px] shadow-bong z-30">
+          <div className=" pt-[17px] animate-appear-slow w-[800px] h-[477px] fixed left-0 top-0 translate-x-[50%] translate-y-[50%] bg-[#FFFFFF] rounded-[8px] shadow-bong z-30">
             <div className="flex justify-between w-[752px] h-[44px] mx-[22px] mt-[22px] items-center">
               <p className="text-[#111315] text-[32px]  leading-[44px]  h-[44px] font-semibold">
                 Invite participants

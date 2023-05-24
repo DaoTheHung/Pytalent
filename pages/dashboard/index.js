@@ -80,9 +80,7 @@ export default function index() {
     fetchArchiveAssessment
   );
 
-  // useEffect(() => {
 
-  // },[isCreate, isDelete]);
 
   function DaysBetween(end_date) {
     // The number of milliseconds in all UTC days (no DST)
@@ -110,12 +108,14 @@ export default function index() {
     // so it's safe to divide by 24 hours
     return (start - end) / oneDay;
   }
+
   const gamess = idGame.map((item) => {
     return {
       game_id: item,
       option: "",
     };
   });
+
   const data = {
     name: name,
     job_function: type1,
@@ -691,7 +691,7 @@ export default function index() {
         )}
 
         <div className=" top-[240px] left-[97px] flex gap-[24px]  text flex-wrap h-auto">
-          {assessment.map((item) => (
+          {assessment?.map((item) => (
             <>
               <Assessment
                 key={item.id}
