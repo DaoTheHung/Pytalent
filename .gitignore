@@ -3,12 +3,13 @@
 # dependencies
 /node_modules
 /.pnp
-/.env
+/.prettierrc.json
 .pnp.js
 
 #vscode
+/.env/
 
-/.vscode
+/.vscode/
 
 # testing
 /coverage
